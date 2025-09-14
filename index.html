@@ -1,0 +1,655 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Main Page</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d141c]">
+            <h2 class="text-[#a81414] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#5f141e] text-sm font-medium leading-normal hover:text-[#a81414] transition-colors duration-200" href="#home">Home</a>
+              <a class="text-[#5f141e] text-sm font-medium leading-normal hover:text-[#a81414] transition-colors duration-200" href="#projects">Projects</a>
+              <a class="text-[#5f141e] text-sm font-medium leading-normal hover:text-[#a81414] transition-colors duration-200" href="#skills">Skills</a>
+              <a class="text-[#5f141e] text-sm font-medium leading-normal hover:text-[#a81414] transition-colors duration-200" href="#contact">Contact</a>
+            </div>
+
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div id="home" class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[867px]:flex-row">
+                <div class="flex flex-1 flex-col gap-6 justify-center @[867px]:w-1/2">
+                  <span class="uppercase text-xs tracking-widest text-[#49739c] font-semibold mb-2">Welcome to my portfolio</span>
+                  <h1 class="text-[#0d141c] text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl mb-2">
+                   Hi, I'm <span class="text-[#a81414]">Hanum Fadiannur</span><br>
+                   <span class="font-normal">An Informatics Student</span>
+
+                  </h1>
+                  <p class="text-[#49739c] text-base leading-relaxed mb-4 max-w-xl">
+                      I am an Informatics student eager to learn and grow in AI, data
+                      science, and software development. I actively seek opportunities
+                      to apply my skills in programming, problem-solving, and
+                      collaboration, approaching every project with curiosity,
+                      dedication, and a strong desire to improve.
+                  </p>
+                  <button
+                    id="viewProjectsBtn"
+                    class="group relative flex min-w-[140px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gradient-to-r from-[#a81414] to-[#4c9eff] text-white text-base font-semibold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 ease-out"
+                  >
+                    <span class="relative z-10 flex items-center gap-2">
+                      <span class="truncate">View Projects</span>
+                      <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#0a6fd9] to-[#4386e6] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center @[867px]:w-1/2 mt-8 @[867px]:mt-0">
+                <div class="relative w-full max-w-[340px] aspect-[4/5] rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#a81414]/80 via-[#4c9eff]/60 to-[#a81414]/80">
+                  <img src="https://i.pinimg.com/736x/87/97/da/8797da9a604ebbf776ebed90eff22ebc.jpg" 
+                      alt="Hanum Fadiannur" 
+                      class="w-full h-full object-cover rounded-2xl border-4 border-white/60 shadow-lg z-10" />
+                  <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#a81414]/30 to-transparent blur-2xl opacity-60"></div>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <!-- Academics Section -->
+            <div class="academics-section px-4 py-10">
+              <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] relative mb-6">
+                Academics
+                <span class="absolute bottom-0 left-0 w-8 h-1 bg-[#a81414] rounded-full"></span>
+              </h2>
+
+              <div class="flex items-center gap-6 p-6 border border-[#cedbe8] rounded-xl shadow-sm bg-white">
+                <img src="img/telu-logo.png" alt="Telkom University" class="w-16 h-16 object-contain" />
+                <div>
+                  <h3 class="text-lg font-semibold text-[#0d141c]">Telkom University</h3>
+                  <p class="text-[#49739c]">Bachelor of Informatics</p>
+                  <p class="text-sm text-[#0d141c] mt-1">Current GPA: <span class="font-bold text-[#a81414]">3.90 / 4.00</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="projects-section px-4 py-10">
+              <div class="flex items-center justify-between mb-8">
+                <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] relative">
+                  Projects
+                  <span class="absolute bottom-0 left-0 w-8 h-1 bg-[#a81414] rounded-full"></span>
+                </h2>
+                <div class="flex gap-2">
+                  <button id="prevBtn" class="w-10 h-10 rounded-full border-2 border-[#a81414] text-[#a81414] hover:bg-[#a81414] hover:text-white transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                  </button>
+                  <button id="nextBtn" class="w-10 h-10 rounded-full border-2 border-[#a81414] text-[#a81414] hover:bg-[#a81414] hover:text-white transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="relative">
+                <div id="projects" class="projects-carousel flex gap-4 overflow-x-auto pb-4 scroll-smooth" style="scrollbar-width: none; -ms-overflow-style: none;">
+
+                <!-- Project 1 -->
+                <div class="project-item min-w-[320px] h-[400px] flex items-end bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden relative cursor-pointer transition-all duration-500 ease-in-out shadow-lg" 
+                     onclick="toggleProjectActive(this)"
+                     style='background-image: url("img/pj-1.png");'>
+                  <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="project-desc">
+                    <h3>Lunar App – Menstrual Cycle Tracker</h3>
+                    <p class="text-sm text-[#49739c]">Fullstack Developer (Group Project) | 2025</p>
+                    <div class="project-content">
+                      <p>A menstrual tracking application to log cycles, monitor symptoms, predict upcoming periods, and receive reminders.</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">Firebase</span>
+                      </div>
+                      <!-- Buttons -->
+                      <div class="flex gap-3 mt-4">
+                        <a href="https://github.com/hanumfadiannur/LUNAR-WEB-BACKEND" target="_blank" 
+                          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#a81414] text-white text-sm font-medium shadow hover:bg-[#0a6fd9] transition">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.6.3-1.1.6-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.1.4-2 1-2.7 0-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.3 2.8-1 2.8-1 .5 1.3.1 2.3.1 2.6.6.7 1 1.6 1 2.7 0 4.6-2.7 5.5-5.3 5.8.4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/>
+                          </svg>
+
+                          GitHub
+                        </a>
+                        <a href="https://hanumfadiannur.github.io/app-lunar-do/" target="_blank" 
+                          class="px-4 py-2 rounded-lg bg-white text-[#a81414] border border-[#a81414] text-sm font-medium shadow hover:bg-[#f0f7ff] transition">
+                          View App
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item min-w-[320px] h-[400px] flex items-end bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden relative cursor-pointer transition-all duration-500 ease-in-out shadow-lg" 
+                     onclick="toggleProjectActive(this)"
+                     style='background-image: url("img/pj-2.png");'>
+                  <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="project-desc">
+                    <h3>WAVE (Web-based Academic Virtual Education)</h3>
+                    <p class="text-sm text-[#49739c]">Backend Developer (Group Project) | 2024</p>
+                    <div class="project-content">
+                      <p> A learning platform with MVC architecture, structured materials, quizzes, and automated assessments.</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Spring Boot</span>
+                        <span class="project-tag">MySql</span>
+                      </div>
+                      <!-- Buttons -->
+                      <div class="flex gap-3 mt-4">
+                        <a href="https://github.com/lal4lal/wave" target="_blank" 
+                          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#a81414] text-white text-sm font-medium shadow hover:bg-[#0a6fd9] transition">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.6.3-1.1.6-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.1.4-2 1-2.7 0-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.3 2.8-1 2.8-1 .5 1.3.1 2.3.1 2.6.6.7 1 1.6 1 2.7 0 4.6-2.7 5.5-5.3 5.8.4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/>
+                          </svg>
+
+                          GitHub
+                        </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-item min-w-[320px] h-[400px] flex items-end bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden relative cursor-pointer transition-all duration-500 ease-in-out shadow-lg" 
+                     onclick="toggleProjectActive(this)"
+                     style='background-image: url("img/pj-3.png");'>
+                  <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="project-desc">
+                    <h3>Easy Trash App</h3>
+                    <p class="text-sm text-[#49739c]">Fullstack Developer (Group Project) | 2024</p>
+                    <div class="project-content">
+                      <p> A digital platform connecting waste contributors with recycling organizations. 
+                          Users earn points for recycling, exchangeable for rewards. 
+                          Promotes sustainable waste management.</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">MySql</span>
+                      </div>
+                      <!-- Buttons -->
+                      <div class="flex gap-3 mt-4">
+                        <a href="https://github.com/hanumfadiannur/Easy-Trash-App" target="_blank" 
+                          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#a81414] text-white text-sm font-medium shadow hover:bg-[#0a6fd9] transition">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.6.3-1.1.6-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.1.4-2 1-2.7 0-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.3 2.8-1 2.8-1 .5 1.3.1 2.3.1 2.6.6.7 1 1.6 1 2.7 0 4.6-2.7 5.5-5.3 5.8.4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/>
+                          </svg>
+
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <!-- Project 4 -->
+                <div class="project-item min-w-[320px] h-[400px] flex items-end bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden relative cursor-pointer transition-all duration-500 ease-in-out shadow-lg" 
+                     onclick="toggleProjectActive(this)"
+                     style='background-image: url("img/pj-4.png");'>
+                  <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="project-desc">
+                    <h3>Customer Churn Prediction</h3>
+                    <p class="text-sm text-[#49739c]">Data Analyst Intern | 2025</p>
+                    <div class="project-content">
+                      <p> Developed a churn prediction model using CatBoost, Gradient Boosting, Decision Tree</span>, optimized with GridSearchCV. 
+                          Achieved F1 Score of 0.88 and deployed with Streamlit.</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">Hybrid Clustering-Classification</span>
+                      </div>
+                      <!-- Buttons -->
+                      <div class="flex gap-3 mt-4">
+                        <a href="https://github.com/hanumfadiannur/ChurnPrediction" 
+                          target="_blank" 
+                          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#a81414] text-white text-sm font-medium shadow hover:bg-[#0a6fd9] transition">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.6.3-1.1.6-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.1.4-2 1-2.7 0-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.3 2.8-1 2.8-1 .5 1.3.1 2.3.1 2.6.6.7 1 1.6 1 2.7 0 4.6-2.7 5.5-5.3 5.8.4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/>
+                          </svg>
+
+                          GitHub
+                        </a>
+                        <a href="https://churnprediction-6t4a3moedwby8kgxs9fj4w.streamlit.app" target="_blank" 
+                          class="px-4 py-2 rounded-lg bg-white text-[#a81414] border border-[#a81414] text-sm font-medium shadow hover:bg-[#f0f7ff] transition">
+                          View App
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-item min-w-[320px] h-[400px] flex items-end bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden relative cursor-pointer transition-all duration-500 ease-in-out shadow-lg" 
+                     onclick="toggleProjectActive(this)"
+                     style='background-image: url("img/pj-5.png");'>
+                  <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div class="project-desc">
+                    <h3>Obesity Level Classification Model</h3>
+                    <p class="text-sm text-[#49739c]">Machine Learning Developer (Group Project) | 2025</p>
+                    <div class="project-content">
+                      <p> Built a K-Nearest Neighbors model to predict obesity levels using a Kaggle dataset of 2,111 records. 
+                          Successfully classified 7 categories, demonstrating AI for health data.</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">KNN</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <style>
+              .projects-carousel::-webkit-scrollbar {
+                display: none;
+              }
+              
+              /* Base project item styles */
+              .project-item {
+                position: relative;
+                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+              }
+              
+              /* Project description container - always positioned consistently */
+              .project-desc {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 1.5rem;
+                color: white;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: 100%;
+                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+              }
+              
+              /* Title always stays at consistent position */
+              .project-desc h3 {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 0.75rem;
+                line-height: 1.2;
+                transform: translateY(0);
+                transition: all 0.3s ease;
+                position: relative;
+                z-index: 20;
+              }
+              
+              /* Content wrapper for description and tags */
+              .project-content {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                transition-delay: 0.1s;
+              }
+              
+              /* Description text */
+              .project-desc p {
+                font-size: 0.875rem;
+                line-height: 1.5;
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 1rem;
+                transition: all 0.3s ease;
+              }
+              
+              /* Tags container */
+              .project-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                transition: all 0.3s ease;
+              }
+              
+              /* Individual tag */
+              .project-tag {
+                padding: 0.25rem 0.75rem;
+                background-color: #a81414;
+                color: white;
+                font-size: 0.75rem;
+                border-radius: 9999px;
+                white-space: nowrap;
+              }
+              
+              /* Active state */
+              .project-item.active {
+                min-width: 500px !important;
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+                z-index: 10;
+              }
+              
+              .project-item.active .project-content {
+                opacity: 1;
+                transform: translateY(0);
+              }
+              
+              /* Hover effects only for non-active cards */
+              .project-item:not(.active):hover {
+                transform: translateY(-4px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+              }
+              
+              /* Overlay gradient */
+              .project-overlay {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 100%);
+                transition: all 0.3s ease;
+              }
+              
+              .project-item.active .project-overlay {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, transparent 100%);
+              }
+              
+              /* Responsive design */
+              @media (max-width: 768px) {
+                .project-item {
+                  min-width: 280px !important;
+                  height: 350px !important;
+                }
+                
+                .project-item.active {
+                  min-width: 320px !important;
+                }
+                
+                .project-desc {
+                  padding: 1rem !important;
+                }
+                
+                .project-desc h3 {
+                  font-size: 1.25rem !important;
+                  margin-bottom: 0.5rem !important;
+                }
+                
+                .project-desc p {
+                  font-size: 0.8rem !important;
+                  margin-bottom: 0.75rem !important;
+                }
+                
+                .project-tag {
+                  font-size: 0.7rem !important;
+                  padding: 0.2rem 0.6rem !important;
+                }
+              }
+            </style>
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Skills</h2>
+            <div id="skills" class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+
+              <!-- PHP -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/php.svg" class="w-6 h-6" alt="PHP Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">PHP / Laravel</h2>
+              </div>
+
+              <!-- Python -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/python.svg" class="w-6 h-6" alt="Python Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">Python</h2>
+              </div>
+
+              <!-- Dart -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/dart.svg" class="w-6 h-6" alt="Dart Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">Dart</h2>
+              </div>
+
+              <!-- Java -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/openjdk.svg" class="w-6 h-6" alt="Java Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">Java</h2>
+              </div>
+
+              <!-- C++ -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/cplusplus.svg" class="w-6 h-6" alt="C++ Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">C++</h2>
+              </div>
+
+              <!-- HTML -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/html5.svg" class="w-6 h-6" alt="HTML Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">HTML</h2>
+              </div>
+
+              <!-- CSS -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg" class="w-6 h-6" alt="CSS Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">CSS</h2>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/javascript.svg" class="w-6 h-6" alt="JavaScript Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">JavaScript</h2>
+              </div>
+
+              <!-- SQL -->
+              <div class="flex items-center gap-3 rounded-lg border border-[#cedbe8] bg-slate-50 p-4">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/mysql.svg" class="w-6 h-6" alt="SQL Logo">
+                <h2 class="text-[#0d141c] text-base font-bold leading-tight">SQL</h2>
+              </div>
+
+            </div>
+
+            
+            <!-- Contact Section -->
+            <div id="contact" class="mt-12 px-4 py-10">
+              <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] pb-6">Get In Touch</h2>
+              <div class="flex flex-col items-center text-center gap-8">
+                <div class="flex flex-col gap-4 max-w-2xl">
+                  <h3 class="text-[#0d141c] text-xl font-semibold">Let's Connect!</h3>
+                  <p class="text-[#49739c] text-base leading-relaxed">
+                    I'm always eager to collaborate on innovative projects, explore creative app ideas, and contribute to impactful solutions. Feel free to connect with me through any of these platforms!
+                  </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+                  <a href="mailto:hanumfadiannur29@gmail.com" class="group relative flex items-center justify-center gap-3 overflow-hidden rounded-lg h-12 px-6 bg-gradient-to-r from-[#a81414] to-[#4c9eff] text-white text-sm font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 ease-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256" class="relative z-10">
+                      <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path>
+                    </svg>
+                    <span class="relative z-10">Email Me</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#0a6fd9] to-[#4386e6] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </a>
+                  
+                  <a href="https://linkedin.com/in/hanum-fadiannur" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-center gap-3 overflow-hidden rounded-lg h-12 px-6 bg-[#0077b5] text-white text-sm font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 ease-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256" class="relative z-10">
+                      <path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"></path>
+                    </svg>
+                    <span class="relative z-10">LinkedIn</span>
+                    <div class="absolute inset-0 bg-[#005885] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </a>
+                  
+                  <a href="https://github.com/hanumfadiannur" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-center gap-3 overflow-hidden rounded-lg h-12 px-6 bg-[#333] text-white text-sm font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 ease-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256" class="relative z-10">
+                      <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68Z"></path>
+                    </svg>
+                    <span class="relative z-10">GitHub</span>
+                    <div class="absolute inset-0 bg-[#1a1a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-[#a81414] to-[#4c9eff] rounded-lg mx-4 my-8 p-8 text-center">
+              <h3 class="text-white text-2xl font-bold mb-4">Let’s Build Something Great</h3>
+              <p class="text-white/90 text-base mb-6 max-w-2xl mx-auto">
+                Open to collaborations and new opportunities where I can apply my skills, learn, and create meaningful impact.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToContact()" class="group relative flex items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-white text-[#a81414] text-sm font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 ease-out">
+                  <span class="relative z-10">Get In Touch</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Smooth scrolling untuk navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // View Projects button functionality
+      document.getElementById('viewProjectsBtn').addEventListener('click', function() {
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+          projectsSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+
+      // Scroll to contact function
+      function scrollToContact() {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+
+      // Add active state to navigation links
+      window.addEventListener('scroll', function() {
+        const sections = ['home', 'projects', 'skills', 'contact'];
+        const navLinks = document.querySelectorAll('header a[href^="#"]');
+        
+        let current = '';
+        sections.forEach(section => {
+          const element = document.getElementById(section);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top <= 100) {
+              current = section;
+            }
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('text-[#a81414]', 'font-semibold');
+          link.classList.add('text-[#0d141c]', 'font-medium');
+          
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.remove('text-[#0d141c]', 'font-medium');
+            link.classList.add('text-[#a81414]', 'font-semibold');
+          }
+        });
+      });
+
+      // Featured Projects Functionality
+      function toggleProjectActive(element) {
+        // Remove active class from all project items
+        document.querySelectorAll('.project-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        
+        // Add active class to the clicked element
+        element.classList.add('active');
+      }
+
+      // Carousel Navigation
+      const carousel = document.getElementById('projects');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      
+      function updateNavButtons() {
+        const isAtStart = carousel.scrollLeft <= 10;
+        const isAtEnd = carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth - 10);
+        
+        prevBtn.disabled = isAtStart;
+        nextBtn.disabled = isAtEnd;
+      }
+      
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: -350,
+          behavior: 'smooth'
+        });
+        setTimeout(updateNavButtons, 100);
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: 350,
+          behavior: 'smooth'
+        });
+        setTimeout(updateNavButtons, 100);
+      });
+      
+      carousel.addEventListener('scroll', updateNavButtons);
+
+      // Add hover effects untuk project cards
+      document.querySelectorAll('.project-item').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          if (!this.classList.contains('active')) {
+            this.style.transform = 'translateY(-4px)';
+            this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.2)';
+          }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          if (!this.classList.contains('active')) {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+          }
+        });
+      });
+
+      // Initialize first card as active and update nav buttons
+      document.addEventListener('DOMContentLoaded', function() {
+        const firstCard = document.querySelector('.project-item');
+        if (firstCard) {
+          firstCard.classList.add('active');
+        }
+        updateNavButtons();
+      });
+    </script>
